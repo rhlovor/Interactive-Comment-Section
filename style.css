@@ -292,6 +292,8 @@
 
 #textarea::placeholder{
     position: absolute;
+    left:24px;
+    top:10px;
 }
 
 #send{
@@ -303,6 +305,7 @@
     font-weight: 500;
     border: hidden;
     border-radius: 10px;
+    font-size: 17px;
 }
 
 .content_2{
