@@ -293,3 +293,29 @@
 #textarea::placeholder{
     position: absolute;
 }
+
+#send{
+    height: 48px;
+    width: 104px;
+    background-color: #5357B6;
+    color: #ffffff;
+    font-family: 'Rubik';
+    font-weight: 500;
+    border: hidden;
+    border-radius: 10px;
+}
+
+.content_2{
+    width: 682px;
+    height: 119px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content3{
+    width:626px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
