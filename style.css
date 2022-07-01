@@ -102,6 +102,22 @@
     align-items: center;
 }
 
+.rep1-1{
+    width: 263px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.you{
+    width: 36px;
+    height: 19px;
+    color: #ffffff;
+    background-color: #5357B6;
+    text-align: center;
+}
+
 /*.user-name, .time{
     position: relative;
     top:4px;
