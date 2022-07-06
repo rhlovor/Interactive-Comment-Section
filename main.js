@@ -18,3 +18,9 @@ const click3 = document.getElementById("replyRamises");
 click3.addEventListener("click", function() {
     document.getElementById("reply-direct3").style.display = 'block';
 })
+
+const plusClick = document.getElementsByClassName('plus');
+
+plusClick.addEventListener('click', function(){
+    document.getElementById('number').innerHTML = '1';
+})
