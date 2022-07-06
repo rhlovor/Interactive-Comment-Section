@@ -1,14 +1,20 @@
-const replyButton = document.querySelectorAll('.rep2');
-const commentBox = document.querySelector('#user-comment-box');
-
-/*for (let i = 0; i < replyButton.length; i++) {
+/*replyButton; for (let i = 0; i < replyButton.length; i++) {
     replyButton[i].style.backgroundColor = "red";
   }*/
+const click = document.getElementById("replyAmy");
 
-  let clone = commentBox.cloneNode(true);
-function userCommentBox(){
-    let newDiv = document.createElement('div');
-    
+click.addEventListener("click", function() {
+    document.getElementById("reply-direct1").style.display = 'block';
+})
 
-}
-  replyButton.addEventListner('click', );
+const click2 = document.getElementById("replyMax");
+
+click2.addEventListener("click", function() {
+    document.getElementById("reply-direct2").style.display = 'block';
+})
+
+const click3 = document.getElementById("replyRamises");
+
+click3.addEventListener("click", function() {
+    document.getElementById("reply-direct3").style.display = 'block';
+})
