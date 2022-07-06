@@ -20,6 +20,20 @@ body {
     margin: 0 auto;
 }
 
+#replyAmy,
+#replyMax,
+#replyRamises {
+    width: 67px;
+    height: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #comment {
     appearance: none;
     border: none;
@@ -39,7 +53,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.user-comment-box-small{
+.user-comment-box-small {
     width: 642px;
     height: 144px;
     background-color: #ffffff;
@@ -50,6 +64,12 @@ body {
     padding: 1rem;
     margin-bottom: 1.5rem;
     float: right;
+}
+
+#reply-direct1,
+#reply-direct2,
+#reply-direct3 {
+    display: none;
 }
 
 .user-comment-edit-box {
@@ -169,7 +189,7 @@ body {
     align-items: center;
 }
 
-.delete{
+.delete {
     width: 69px;
     height: 24px;
     font-size: 16px;
@@ -219,7 +239,7 @@ body {
 
 }
 
-.edit-text{
+.edit-text {
     appearance: none;
     border: none;
     outline: none;
@@ -245,7 +265,62 @@ body {
     cursor: pointer;
 }
 
-.rep2:hover .edit-text{
+.rep2:hover .edit-text {
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+#replyAmy:hover {
+    cursor: pointer;
+}
+
+#replyAmy:hover svg path {
+    fill: hsl(239, 57%, 85%);
+}
+
+#replyAmy:hover .reply-text {
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+#replyAmy:hover .edit-text {
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+#replyMax:hover {
+    cursor: pointer;
+}
+
+#replyMax:hover svg path {
+    fill: hsl(239, 57%, 85%);
+}
+
+#replyMax:hover .reply-text {
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+#replyMax:hover .edit-text {
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+
+#replyRamises:hover {
+    cursor: pointer;
+}
+
+#replyRamises:hover svg path {
+    fill: hsl(239, 57%, 85%);
+}
+
+#replyRamises:hover .reply-text {
+    color: hsl(239, 57%, 85%);
+    cursor: pointer;
+}
+
+#replyRamises:hover .edit-text {
     color: hsl(239, 57%, 85%);
     cursor: pointer;
 }
