@@ -19,8 +19,16 @@ click3.addEventListener("click", function() {
     document.getElementById("reply-direct3").style.display = 'block';
 })
 
-const plusClick = document.getElementsByClassName('plus');
+let count = 0;
 
-plusClick.addEventListener('click', function(){
-    document.getElementById('number').innerHTML = '1';
-})
+let number = document.getElementById('number1');
+
+function increment(){
+    count = count + 1;
+    number.innerText = count ; 
+}
+
+function decrement(){
+    count = count - 1;
+    number.innerText = count;
+}
