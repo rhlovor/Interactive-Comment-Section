@@ -390,23 +390,23 @@ body {
 
 
 
-#comment {
+.comment {
     border: 1.5px solid hsl(223, 19%, 93%);
     border-radius: 1rem;
     padding: 1rem;
     resize: none;
 }
 
-#comment:focus {
+.comment:focus {
     border: 1.5px solid hsl(238, 40%, 52%);
 }
 
-#comment::placeholder {
+.comment::placeholder {
     font-family: 'Rubik';
     font-size: 1rem;
 }
 
-#comment:hover {
+.comment:hover {
     cursor: pointer;
 }
 
@@ -420,6 +420,23 @@ body {
     font-family: 'Rubik';
     font-size: 1rem;
     font-weight: 500;
+}
+
+.send{
+    width: 104px;
+    height: 48px;
+    border: hidden;
+    border-radius: 0.5rem;
+    color: #ffffff;
+    background-color: hsl(238, 40%, 52%);
+    font-family: 'Rubik';
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.send:hover{
+    background-color: hsl(239, 57%, 85%);
+    cursor: pointer;
 }
 
 #send:hover {
