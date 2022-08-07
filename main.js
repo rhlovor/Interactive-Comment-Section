@@ -22,36 +22,36 @@ click3.addEventListener("click", function () {
 
 
 let number = document.getElementsByClassName('number');
-number[0].textContent = 0;
-number[1].textContent = 0;
-number[2].textContent = 0;
-number[3].textContent = 0;
+number[0].textContent = 12;
+number[1].textContent = 5;
+number[2].textContent = 4;
+number[3].textContent = 2;
 
 let plus = document.getElementsByClassName('add');
 let minus = document.getElementsByClassName('subtract')
 
 
-// function increment(){
-//     let count = 0;
-//     count = count + 1;
-//     number.innerHTML = count;
-//     console.log('clicked');
-// }
+/*function increment(){
+    count = count + 1;
+    for(let i = 0; i < number.length; i++){
+        number[i].innerText = count;
+    }
+    console.log('clicked');
+}
 
 
 
-// function decrement(){
-//     let count = 0;
-//     count = count - 1;
-//     for(let i = 0; i < number.length; i++){
-//         number[i].innerText = count;
-//     }
-//     console.log('clicked');
-// }
-let like = 0;
-let likeOne = 0;
-let likeTwo = 0;
-let likeThree = 0;
+function decrement(){
+    count = count - 1;
+    for(let i = 0; i < number.length; i++){
+        number[i].innerText = count;
+    }
+    console.log('clicked');
+}*/
+let like = 12;
+let likeOne = 5;
+let likeTwo = 4;
+let likeThree = 2;
 
 plus[0].addEventListener("click", function () {
     like += 1;
