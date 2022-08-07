@@ -31,23 +31,23 @@ let plus = document.getElementsByClassName('add');
 let minus = document.getElementsByClassName('subtract')
 
 
-/*function increment(){
-    count = count + 1;
-    for(let i = 0; i < number.length; i++){
-        number[i].innerText = count;
-    }
-    console.log('clicked');
-}
+// function increment(){
+//     let count = 0;
+//     count = count + 1;
+//     number.innerHTML = count;
+//     console.log('clicked');
+// }
 
 
 
-function decrement(){
-    count = count - 1;
-    for(let i = 0; i < number.length; i++){
-        number[i].innerText = count;
-    }
-    console.log('clicked');
-}*/
+// function decrement(){
+//     let count = 0;
+//     count = count - 1;
+//     for(let i = 0; i < number.length; i++){
+//         number[i].innerText = count;
+//     }
+//     console.log('clicked');
+// }
 let like = 0;
 let likeOne = 0;
 let likeTwo = 0;
