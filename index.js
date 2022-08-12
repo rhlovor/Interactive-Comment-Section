@@ -1,48 +1,49 @@
 let form = document.getElementById("user-comment-box");
 let sendButton = document.getElementById("send");
-let textbox = document.getElementById("textbox");
+let textbox = document.getElementById("textbox").value;
 let lastComment = document.getElementById("last-comment");
 let number = document.getElementsByClassName('number');
 let plus = document.getElementsByClassName('add');
 let minus = document.getElementsByClassName('subtract');
 
-let lastElArray = []
-
-
-
-let newBar = document.createElement('div');
-
-
-//variables for the newDiv function
-
-    
-
-
-    
-    
-    
-
-    
-
-    
-
-// function pushArray() {
-//     lastElArray.push()
-// } 
-
-
 
 
 
  function userDiv() {
-    
+    let repContainer = document.getElementById('reply-container');
+
     let form = document.getElementsByClassName('first-comment');
     const newForm = form[0].cloneNode(true);
-    let repContainer = document.getElementById('reply-container');
+
+    let text = document.getElementById("textbox").value;
+
+    
+    
 
     let commentBoxDiv = newForm.children[0];
     let rating = commentBoxDiv.children[0];
     let number = rating.children[1];
+    number.textContent = 0;
+
+        let plus = rating.children[0];
+        let minus = rating.children[2];
+
+        let like = 0;
+
+
+
+        plus.addEventListener("click", function () {
+            like += 1;
+            number.textContent = like;
+        })
+
+        minus.addEventListener("click", function () {
+            like -= 1;
+            number.textContent = like;
+        })
+
+
+
     let content = commentBoxDiv.children[1];
     let textBod = content.children[1];
     let p = textBod.children[0];
@@ -54,20 +55,13 @@ let newBar = document.createElement('div');
     let time = imgDiv.children[2];
     userName.textContent = 'juliusomo';
     time.textContent = 'now';
+
+    p.textContent = text;
+
+    
     
 
     repContainer.appendChild(newForm);
-
-
-
-
-
-    
-
-
-
-
-
     
 
      console.log('New Div created')
@@ -86,12 +80,31 @@ function preventDefault() {
 sendButton.addEventListener('click', function () {
     preventDefault();
     userDiv();
+
     
 
     
 
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
