@@ -1,10 +1,11 @@
 let form = document.getElementById("user-comment-box");
 let sendButton = document.getElementById("send");
-let textbox = document.getElementById("textbox").value;
+let textbox = document.getElementById("textbox");
 let lastComment = document.getElementById("last-comment");
 let number = document.getElementsByClassName('number');
 let plus = document.getElementsByClassName('add');
 let minus = document.getElementsByClassName('subtract');
+
 
 
 
@@ -15,7 +16,7 @@ let minus = document.getElementsByClassName('subtract');
     let form = document.getElementsByClassName('first-comment');
     const newForm = form[0].cloneNode(true);
 
-    let text = document.getElementById("textbox").value;
+    let text = document.getElementById("textbox");
 
     
     
@@ -51,19 +52,40 @@ let minus = document.getElementsByClassName('subtract');
     let imgDiv = reply1.children[0];
     let userImage = imgDiv.children[0];
     userImage.src = "./images/avatars/image-juliusomo.webp";
+    let replyDiv = reply1.children[1];
+    let replySvg = replyDiv.children[0];
+    let replyText = replyDiv.children[1];
+    replySvg.style.display = "none";
+    replyText.style.display = "none";
     let userName = imgDiv.children[1];
     let time = imgDiv.children[2];
     userName.textContent = 'juliusomo';
     time.textContent = 'now';
 
-    p.textContent = text;
+    p.textContent = text.value;
 
+    p.style.width = '616px';
+    p.style.height = '72px';
+
+    let edit = document.getElementById("rep-del");
+    let newEdit = edit.cloneNode(true);
+    let replyAmy = document.getElementById("replyAmy");
+    let repAmyClone = replyAmy.cloneNode(true);
+
+    newEdit.style.position = 'relative';
+    newEdit.style.right = '57px';
+
+    text.value = ""
+    
+    replyDiv.appendChild(newEdit);
+    
+
+    
     
     
 
     repContainer.appendChild(newForm);
     
-
      console.log('New Div created')
  }
 
@@ -79,14 +101,17 @@ function preventDefault() {
 
 sendButton.addEventListener('click', function () {
     preventDefault();
-    userDiv();
+    if(textbox.value){
+        return userDiv();
+    }else{
+        return;
+    };
 
     
-
-    
-
 
 })
+
+
 
 
 
